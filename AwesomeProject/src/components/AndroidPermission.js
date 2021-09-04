@@ -4,7 +4,7 @@ import { Button, PermissionsAndroid, StatusBar, StyleSheet, Text, View } from "r
 const requestCameraPermission = async () => {
   try {
     const granted = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+      PermissionsAndroid.PERMISSIONS.CAMERA,
       {
         title: "Cool Photo App Camera Permission",
         message:
